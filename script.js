@@ -101,7 +101,8 @@ if (filterBtns.length > 0 && projects.length > 0) {
             const filter = btn.getAttribute('data-filter');
             
             projects.forEach(project => {
-                if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                const categories = (project.getAttribute('data-category') || '').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
                     project.style.display = 'grid';
                     project.style.animation = 'fadeUp 0.5s ease both';
                 } else {
