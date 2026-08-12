@@ -364,8 +364,9 @@
             </div>
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-img-wrap">
-                        <img src="assets/images/citi_bike_dashboard_preview.png" alt="Citi Bike Power BI Dashboard" class="proj-vis-img">
+                    <div class="vis-img-wrap" onclick="openImgModal(this.querySelector('img'))">
+                        <img src="assets/images/citi_bike_dashboard_preview.png" alt="Citi Bike Power BI Dashboard Screenshot" class="proj-vis-img">
+                        <div class="vis-img-hover"><i class="fas fa-search-plus"></i> View High-Res Dashboard</div>
                         <div class="vis-img-badge"><i class="fas fa-chart-pie"></i> Power BI Dashboard</div>
                     </div>
                     <div class="vis-mini-stats" style="margin-top:12px;">
@@ -380,8 +381,9 @@
         <div class="proj rev reveal" data-category="ml research">
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-img-wrap">
+                    <div class="vis-img-wrap" onclick="openImgModal(this.querySelector('img'))">
                         <img src="assets/images/health_risk_ml_preview.png" alt="Health Risk Prediction ML Analytics" class="proj-vis-img">
+                        <div class="vis-img-hover"><i class="fas fa-search-plus"></i> View High-Res Analytics</div>
                         <div class="vis-img-badge"><i class="fas fa-brain"></i> ML ROC-AUC Analytics</div>
                     </div>
                     <div class="vis-mini-stats" style="margin-top:12px;">
@@ -451,8 +453,9 @@
             </div>
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-img-wrap">
+                    <div class="vis-img-wrap" onclick="openImgModal(this.querySelector('img'))">
                         <img src="assets/images/ai_risk_system_preview.png" alt="AI Risk Intelligence System Architecture" class="proj-vis-img">
+                        <div class="vis-img-hover"><i class="fas fa-search-plus"></i> View High-Res Architecture</div>
                         <div class="vis-img-badge"><i class="fas fa-network-wired"></i> Multimodal AI Architecture</div>
                     </div>
                     <div class="vis-mini-stats" style="margin-top:12px;grid-template-columns:1fr 1fr;gap:8px;">
@@ -495,8 +498,9 @@
             </div>
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-img-wrap">
+                    <div class="vis-img-wrap" onclick="openImgModal(this.querySelector('img'))">
                         <img src="assets/images/khwaish_event_preview.png" alt="Khwaish Platform UI" class="proj-vis-img">
+                        <div class="vis-img-hover"><i class="fas fa-search-plus"></i> View High-Res Interface</div>
                         <div class="vis-img-badge"><i class="fas fa-laptop-code"></i> Live Web Platform UI</div>
                     </div>
                     <div class="vis-mini-stats" style="margin-top:12px;grid-template-columns:1fr 1fr;gap:8px;">
@@ -664,6 +668,19 @@
         </div>
         <div class="cert-modal-footer">
             <a id="certModalDownload" href="" download class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+        </div>
+    </div>
+</div>
+
+<!-- Screenshot Lightbox Modal -->
+<div id="imgModal" class="cert-modal" onclick="closeImgModal()">
+    <div class="cert-modal-content" onclick="event.stopPropagation()" style="max-width:1050px;">
+        <span class="cert-modal-close" onclick="closeImgModal()">&times;</span>
+        <div class="cert-modal-header">
+            <h3 id="imgModalTitle">Project Screenshot High-Res Preview</h3>
+        </div>
+        <div class="cert-modal-body" style="padding:12px;background:#0F172A;">
+            <img id="imgModalSrc" src="" alt="Project Visual Preview" style="max-height:80vh;width:100%;object-fit:contain;border-radius:8px;">
         </div>
     </div>
 </div>

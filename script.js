@@ -652,4 +652,20 @@ if (copyLinkBtn) {
     });
 }  // Closing brace for if (copyLinkBtn) statement
 
+/* ── Screenshot Lightbox Modal ── */
+function openImgModal(imgEl) {
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('imgModalSrc');
+    const modalTitle = document.getElementById('imgModalTitle');
+    if (modal && modalImg && imgEl) {
+        modalImg.src = imgEl.src;
+        if (modalTitle) modalTitle.textContent = imgEl.alt || 'High-Resolution Project Preview';
+        modal.classList.add('active');
+    }
+}
+function closeImgModal() {
+    const modal = document.getElementById('imgModal');
+    if (modal) modal.classList.remove('active');
+}
+
 // End of script - portfolio ready
