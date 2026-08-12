@@ -1119,7 +1119,24 @@ body.dark-mode{
 }
 .ec-badge.now{color:var(--green);background:var(--green-lt);border:1px solid #6EE7B7;}
 .ec-badge.done{color:var(--muted);background:var(--bg2);border:1px solid var(--border);}
-.ec-org{font-size:12.5px;color:var(--muted);margin-bottom:18px;font-weight:500;}
+.ec-org{font-size:12.5px;color:var(--muted);margin-bottom:18px;font-weight:500;display:flex;align-items:center;gap:8px;}
+.org-logo-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.cert-logo-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+  vertical-align: middle;
+  display: inline-block;
+}
 .ec-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
 .ec-list li{
   font-size:13.5px;color:var(--text2);
