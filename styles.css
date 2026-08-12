@@ -1344,6 +1344,27 @@ body.dark-mode{
   color:var(--amber);
   font-size:14px;
 }
+.author-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border2);
+  flex-shrink: 0;
+  box-shadow: var(--shadow-xs);
+}
+
+/* Achievement icon gradient container */
+.ach-icon-wrap {
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  box-shadow: var(--shadow-xs);
+}
 
 /* ═══════════════════════════════════════════
    CONTACT
