@@ -109,6 +109,31 @@ if (filterBtns.length > 0 && projects.length > 0) {
     });
 }
 
+/* ── Skill Category Filtering ── */
+const skillFilterBtns = document.querySelectorAll('.skill-filter-btn');
+const skillCards = document.querySelectorAll('.skill-card');
+
+if (skillFilterBtns.length > 0 && skillCards.length > 0) {
+    skillFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            skillFilterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.getAttribute('data-skill-filter');
+            
+            skillCards.forEach(card => {
+                const categories = (card.getAttribute('data-skill-cat') || '').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
+                    card.classList.remove('is-hidden');
+                    card.style.animation = 'fadeUp 0.4s ease both';
+                } else {
+                    card.classList.add('is-hidden');
+                }
+            });
+        });
+    });
+}
+
 /* ── Project PPT Embeds ── */
 function getEmbedSource(pptPath, slideIndex) {
     if (!pptPath || !window.location.origin || window.location.protocol === 'file:') {
