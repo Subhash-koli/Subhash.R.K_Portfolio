@@ -983,6 +983,73 @@ body.dark-mode{
 }
 .vis-inner{width:100%;position:relative;z-index:1;}
 
+/* Executive Profile Avatar Badge */
+.hero-profile-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  padding: 6px 18px 6px 8px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 16px;
+}
+.hero-profile-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--blue2);
+}
+.hero-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+.hero-profile-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.hero-profile-title {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Project Visual Image Panels */
+.vis-img-wrap {
+  position: relative;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.proj-vis-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.proj:hover .proj-vis-img {
+  transform: scale(1.04);
+}
+.vis-img-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  color: white;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* chart vis */
 .vis-chart{background:white;border:1px solid var(--border);border-radius:var(--r-md);padding:16px;box-shadow:var(--shadow-xs);margin-bottom:12px;}
 .vis-chart-title{font-family:var(--font-code);font-size:10px;color:var(--muted);margin-bottom:10px;}

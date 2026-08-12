@@ -116,6 +116,13 @@
     <div class="hero-inner">
         <div class="hero-left">
             <div class="hero-eyebrow"><div class="pulse-dot"></div>DATA ANALYST • DATA SCIENCE • MACHINE LEARNING</div>
+            <div class="hero-profile-wrap">
+                <img src="assets/images/profile_avatar.png" alt="Subhash R. Koli" class="hero-profile-img">
+                <div class="hero-profile-info">
+                    <span class="hero-profile-name">Subhash R. Koli</span>
+                    <span class="hero-profile-title"><i class="fas fa-check-circle" style="color:var(--blue2);"></i> B.Sc. Data Science Graduate (8.9 CGPA)</span>
+                </div>
+            </div>
             <h1 class="hero-name">Subhash R.<br/><span class="grad">Koli</span></h1>
             <div class="hero-roles">
                 <span class="role-chip rc-blue"><i class="devicon-python-plain colored"></i> Data Analyst</span>
@@ -357,24 +364,11 @@
             </div>
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-chart">
-                        <div class="vis-chart-title">hourly_rides.groupby('hour').count().plot(kind='bar')</div>
-                        <div class="vis-bars">
-                            <div class="vb" style="height:35%;background:#BFCFFD;"></div>
-                            <div class="vb" style="height:72%;background:#93C5FD;"></div>
-                            <div class="vb" style="height:48%;background:#BFCFFD;"></div>
-                            <div class="vb" style="height:58%;background:#BFCFFD;"></div>
-                            <div class="vb" style="height:62%;background:#BFCFFD;"></div>
-                            <div class="vb" style="height:100%;background:linear-gradient(180deg,#60A5FA,#2563EB);"></div>
-                            <div class="vb" style="height:78%;background:#93C5FD;"></div>
-                            <div class="vb" style="height:42%;background:#BFCFFD;"></div>
-                            <div class="vb" style="height:22%;background:#DBEAFE;"></div>
-                        </div>
-                        <div class="vis-xl">
-                            <div class="vxl">6am</div><div class="vxl">8am</div><div class="vxl">10am</div><div class="vxl">12pm</div><div class="vxl">2pm</div><div class="vxl" style="color:var(--blue2);font-weight:700;">5pm★</div><div class="vxl">7pm</div><div class="vxl">9pm</div><div class="vxl">11pm</div>
-                        </div>
+                    <div class="vis-img-wrap">
+                        <img src="assets/images/citi_bike_dashboard_preview.png" alt="Citi Bike Power BI Dashboard" class="proj-vis-img">
+                        <div class="vis-img-badge"><i class="fas fa-chart-pie"></i> Power BI Dashboard</div>
                     </div>
-                    <div class="vis-mini-stats">
+                    <div class="vis-mini-stats" style="margin-top:12px;">
                         <div class="vms"><div class="vms-val" style="color:var(--blue2);">~40%</div><div class="vms-label">Reporting Time Saved</div></div>
                         <div class="vms"><div class="vms-val" style="color:var(--green);">+35%</div><div class="vms-label">Weekend Usage Surge</div></div>
                     </div>
@@ -386,25 +380,13 @@
         <div class="proj rev reveal" data-category="ml research">
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-chart" style="margin-bottom:10px;">
-                        <div class="vis-chart-title">confusion_matrix(y_test, y_pred)</div>
-                        <div class="conf-grid">
-                            <div class="cg-cell cg-tp"><div class="cv">847</div><div class="cl">True Positive</div></div>
-                            <div class="cg-cell cg-fp"><div class="cv">53</div><div class="cl">False Positive</div></div>
-                            <div class="cg-cell cg-fn"><div class="cv">47</div><div class="cl">False Negative</div></div>
-                            <div class="cg-cell cg-tn"><div class="cv">453</div><div class="cl">True Negative</div></div>
-                        </div>
+                    <div class="vis-img-wrap">
+                        <img src="assets/images/health_risk_ml_preview.png" alt="Health Risk Prediction ML Analytics" class="proj-vis-img">
+                        <div class="vis-img-badge"><i class="fas fa-brain"></i> ML ROC-AUC Analytics</div>
                     </div>
-                    <div class="vis-mini-stats" style="margin-bottom:10px;">
+                    <div class="vis-mini-stats" style="margin-top:12px;">
                         <div class="vms"><div class="vms-val" style="color:var(--green);">87.3%</div><div class="vms-label">CV Accuracy</div></div>
                         <div class="vms"><div class="vms-val" style="color:var(--violet);">0.91</div><div class="vms-label">ROC-AUC</div></div>
-                    </div>
-                    <div class="code-block">
-<span class="ck">for</span> name, model <span class="ck">in</span> models.items():<br/>
-&nbsp;score = <span class="cf">cross_val_score</span>(model,<br/>
-&nbsp;&nbsp;X_train, y_train, cv=<span class="cn">5</span>).mean()<br/>
-&nbsp;<span class="cf">print</span>(<span class="cs">f"{name}: {score:.2%}"</span>)<br/>
-<span class="cc"># Best: Random Forest → 87.3%</span>
                     </div>
                 </div>
             </div>
@@ -516,18 +498,13 @@
             </div>
             <div class="proj-vis">
                 <div class="vis-inner">
-                    <div class="vis-mini-stats" style="margin-bottom:12px;grid-template-columns:1fr 1fr 1fr;gap:8px;">
-                        <div class="vms"><div class="vms-val" style="color:var(--blue2);">5</div><div class="vms-label">Devs Led</div></div>
-                        <div class="vms"><div class="vms-val" style="color:var(--green);">1.2K+</div><div class="vms-label">Registrations</div></div>
-                        <div class="vms"><div class="vms-val" style="color:var(--amber);">3-Day</div><div class="vms-label">Live Event</div></div>
+                    <div class="vis-img-wrap">
+                        <img src="assets/images/khwaish_event_preview.png" alt="Khwaish Platform UI" class="proj-vis-img">
+                        <div class="vis-img-badge"><i class="fas fa-laptop-code"></i> Live Web Platform UI</div>
                     </div>
-                    <div class="code-block">
-<span class="ck">class</span> <span class="cf">KhwaishWebsite</span>:<br/>
-&nbsp;stack = [<span class="cs">"HTML5"</span>, <span class="cs">"CSS3"</span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"JavaScript"</span>,<span class="cs">"PHP"</span>,<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cs">"MySQL"</span>,<span class="cs">"GitHub"</span>]<br/>
-&nbsp;registrations = <span class="cn">1200</span><br/>
-&nbsp;award = <span class="cs">"<i class="fas fa-trophy"></i> Best Web Dev 2024"</span>
+                    <div class="vis-mini-stats" style="margin-top:12px;grid-template-columns:1fr 1fr;gap:8px;">
+                        <div class="vms"><div class="vms-val" style="color:var(--blue2);">5 Devs</div><div class="vms-label">Team Lead</div></div>
+                        <div class="vms"><div class="vms-val" style="color:var(--green);">1.2K+</div><div class="vms-label">Registrations</div></div>
                     </div>
                 </div>
             </div>
