@@ -1614,7 +1614,8 @@ html{
 
 @media(max-width:960px){
   .hero-inner,.about-grid,.proj,.proj.rev,.exp-grid,.contact-inner{grid-template-columns:1fr !important;}
-  .hero-right,.exp-nav{display:none;}
+  .exp-nav, .float-badge, .hero-shape-1, .hero-shape-2{display:none !important;}
+  .hero-right{display:block;margin-top:16px;width:100%;max-width:500px;margin-left:auto;margin-right:auto;}
   .skills-grid,.certs-grid{grid-template-columns:1fr 1fr;}
   .testimonials-grid{grid-template-columns:1fr;}
   .ach-grid{grid-template-columns:repeat(2,1fr);}
@@ -1725,6 +1726,12 @@ html{
     padding: 9px !important;
   }
 
+  /* ── Global Word Wrap Safety ── */
+  .cl-val, .about-p, .pj-desc, .ec-list li, .sec-title, .sec-sub, .hero-name, .hero-desc, .cc-name, .ach-title {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
   /* ── Modals on XS ── */
   .cert-modal-content {
     width: 94%;
@@ -1734,10 +1741,18 @@ html{
     padding: 16px 18px 12px;
   }
   .cert-modal-body {
-    padding: 16px;
+    padding: 14px;
+  }
+  .cert-modal-body img {
+    max-height: 50vh;
+    object-fit: contain;
   }
   .cert-modal-footer {
-    padding: 14px 18px;
+    padding: 12px 18px;
+  }
+  .cert-modal-footer .btn {
+    width: 100%;
+    justify-content: center;
   }
   .cert-modal-close {
     top: 12px;
@@ -1897,9 +1912,17 @@ html{
     font-size: 12px;
   }
 
-  /* ── Experience ── */
-  .exp-card {
+  /* ── Experience & Education Card Headers ── */
+  .exp-card, .edu-card {
     padding: 20px 18px;
+  }
+  .ec-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .ec-badge {
+    align-self: flex-start;
   }
   .ec-title {
     font-size: 15px;
@@ -1909,11 +1932,6 @@ html{
   }
   .ec-list li {
     font-size: 12.5px;
-  }
-
-  /* ── Education ── */
-  .edu-card {
-    padding: 20px 18px;
   }
 
   /* ── Achievements ── */
