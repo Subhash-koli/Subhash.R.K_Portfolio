@@ -500,6 +500,23 @@
                     <div class="pj-metric"><span class="pj-m-val a">+35%</span><span class="pj-m-label">Weekend Surge</span></div>
                 </div>
                 <p class="pj-desc">Analysed <strong>500K+ NYC Citi Bike ride records</strong> end-to-end: raw data ingestion, Python-based cleaning (identifying ~30% fewer data-quality issues), SQL querying, and interactive <strong>Power BI dashboards</strong> with DAX measures. Key finding: <strong>+35% weekend demand surge</strong> vs weekdays, pointing to fleet reallocation opportunities for peak and off-peak operations. Estimated ~40% reduction in manual reporting effort post-dashboard deployment.</p>
+                
+                <!-- Visual Pipeline Strip -->
+                <div class="pj-pipeline">
+                    <div class="pipe-header"><i class="fas fa-route"></i> Analytics Lifecycle</div>
+                    <div class="pipe-steps">
+                        <span class="pipe-step"><i class="fas fa-database"></i> 500K+ Raw Rides</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="devicon-python-plain colored"></i> Python Cleaning</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="devicon-mysql-plain colored"></i> SQL Queries</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-chart-pie" style="color:#F59E0B;"></i> Power BI Star Schema</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step highlight"><i class="fas fa-lightbulb"></i> +35% Weekend Surge</span>
+                    </div>
+                </div>
+
                 <div class="pj-tech"><span class="pj-tag"><i class="devicon-python-plain colored"></i> Python</span><span class="pj-tag"><i class="devicon-pandas-plain colored"></i> Pandas</span><span class="pj-tag"><i class="devicon-numpy-original colored"></i> NumPy</span><span class="pj-tag"><i class="fas fa-chart-bar" style="color:#F59E0B;"></i> Power BI</span><span class="pj-tag">DAX</span><span class="pj-tag"><i class="devicon-mysql-plain colored"></i> SQL</span></div>
                 <div class="project-ppt" data-ppt-file="assets/ppt/citi bikes.pptx">
                     <div class="ppt-head">
@@ -550,7 +567,7 @@
             </div>
             <div class="proj-info">
                 <div class="pj-num">Project 02 &nbsp;<span class="pj-badge ml">ML Research</span></div>
-                <div class="pj-title">Health & Emotional Risk Prediction</div>
+                <div class="pj-title">Health &amp; Emotional Risk Prediction</div>
                 <div class="pj-sub">ML Research · University of Mumbai Avishkar Convention · 2024</div>
                 <div class="pj-metrics">
                     <div class="pj-metric"><span class="pj-m-val g">87.3%</span><span class="pj-m-label">CV Accuracy</span></div>
@@ -559,6 +576,23 @@
                 </div>
                 <p class="pj-desc">Compared three supervised ML classifiers on <strong>2,000+ structured health and emotional survey responses</strong>: Logistic Regression (baseline), Decision Tree, and Random Forest. Selected Random Forest via <strong>5-fold cross-validation (87.3% mean accuracy, ROC-AUC 0.91)</strong>. Evaluated precision-recall trade-offs, class imbalance handling, and feature importance. Presented full methodology at the <strong>University of Mumbai Avishkar Research Convention</strong>.
                 <br><em style="font-size:12px;color:var(--muted);display:block;margin-top:8px;">Note: Research prototype — results are not clinically validated.</em></p>
+                
+                <!-- Visual Pipeline Strip -->
+                <div class="pj-pipeline">
+                    <div class="pipe-header"><i class="fas fa-brain"></i> ML Research Methodology</div>
+                    <div class="pipe-steps">
+                        <span class="pipe-step"><i class="fas fa-table"></i> 2,000+ Survey Data</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-filter"></i> Preprocessing &amp; Imbalance</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-code-compare"></i> 3 Supervised Models</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-rotate"></i> 5-Fold Cross-Val</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step highlight"><i class="fas fa-trophy"></i> Random Forest (0.91 AUC)</span>
+                    </div>
+                </div>
+
                 <div class="pj-tech"><span class="pj-tag"><i class="devicon-python-plain colored"></i> Python</span><span class="pj-tag"><i class="devicon-scikitlearn-line colored"></i> Scikit-learn</span><span class="pj-tag"><i class="devicon-pandas-plain colored"></i> Pandas</span><span class="pj-tag"><i class="devicon-numpy-original colored"></i> NumPy</span><span class="pj-tag">Matplotlib</span><span class="pj-tag">Seaborn</span><span class="pj-tag"><i class="devicon-jupyter-plain colored"></i> Jupyter</span></div>
                 <div class="project-ppt" data-ppt-file="assets/ppt/Health_Emotional_Risk_Prediction.pptx">
                     <div class="ppt-head">
@@ -591,6 +625,23 @@
                 </div>
                 <p class="pj-desc">Architected a <strong>multimodal AI research prototype</strong> classifying Low / Medium / High-risk behavioral states from labelled facial expression, speech-tone, and self-report behavioral data. Built CNN classifiers, an XGBoost late-fusion engine, and a Streamlit dashboard with SHAP explainability. Achieved <strong>68% test accuracy</strong> on a constrained dataset — limitations include small sample size and absence of longitudinal validation.
                 <br><em style="font-size:12px;color:var(--muted);display:block;margin-top:8px;">Research prototype for experimentation and model evaluation. Not intended for medical, employment, security, or other high-stakes decisions.</em></p>
+                
+                <!-- Visual Pipeline Strip -->
+                <div class="pj-pipeline">
+                    <div class="pipe-header"><i class="fas fa-microchip"></i> Multimodal Architecture</div>
+                    <div class="pipe-steps">
+                        <span class="pipe-step"><i class="fas fa-video"></i> Video + Audio + Survey</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-network-wired"></i> 2D-CNN &amp; MFCC Extraction</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-layer-group"></i> XGBoost Late-Fusion</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-chart-line"></i> SHAP Explainability</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step highlight"><i class="fas fa-desktop"></i> Streamlit Prototype (68%)</span>
+                    </div>
+                </div>
+
                 <div class="pj-tech"><span class="pj-tag"><i class="devicon-python-plain colored"></i> Python</span><span class="pj-tag">CNN / Multimodal</span><span class="pj-tag">XGBoost</span><span class="pj-tag">SHAP Explainability</span><span class="pj-tag"><i class="devicon-scikitlearn-line colored"></i> Scikit-learn</span><span class="pj-tag"><i class="devicon-git-plain colored"></i> Git</span><span class="pj-tag">Streamlit</span></div>
                 <div class="project-ppt" data-ppt-file="assets/ppt/Welifywork.pptx">
                     <div class="ppt-head">
@@ -626,15 +677,45 @@
 
         <!-- P4 - Khwaish Cultural Event Website -->
         <div class="proj rev reveal" data-category="web">
+            <div class="proj-vis">
+                <div class="vis-inner">
+                    <div class="vis-img-wrap" onclick="openImgModal(this.querySelector('img'))">
+                        <img src="assets/images/khwaish_event_preview.png" alt="Khwaish Platform UI" class="proj-vis-img">
+                        <div class="vis-img-hover"><i class="fas fa-search-plus"></i> View High-Res Interface</div>
+                        <div class="vis-img-badge"><i class="fas fa-laptop-code"></i> Live Web Platform UI</div>
+                    </div>
+                    <div class="vis-mini-stats" style="margin-top:12px;grid-template-columns:1fr 1fr;gap:8px;">
+                        <div class="vms"><div class="vms-val" style="color:var(--blue2);">5 Devs</div><div class="vms-label">Team Lead</div></div>
+                        <div class="vms"><div class="vms-val" style="color:var(--green);">1.2K+</div><div class="vms-label">Registrations</div></div>
+                    </div>
+                </div>
+            </div>
             <div class="proj-info">
-                <div class="pj-num">Project 04 &nbsp;<span class="pj-badge web">Full-Stack & IT Lead</span></div>
+                <div class="pj-num">Project 04 &nbsp;<span class="pj-badge web">Full-Stack &amp; IT Lead</span></div>
                 <div class="pj-title">Khwaish Cultural Event Platform</div>
-                <div class="pj-sub">IT Head & Technical Lead · College Project · 2024–25</div>
+                <div class="pj-sub">IT Head &amp; Technical Lead · College Project · 2024–25</div>
                 <div class="pj-metrics">
                     <div class="pj-metric"><span class="pj-m-val b">5</span><span class="pj-m-label">Devs Led</span></div>
                     <div class="pj-metric"><span class="pj-m-val g">1,200+</span><span class="pj-m-label">Registrations</span></div>
                 </div>
                 <p class="pj-desc">Led a team of <strong>5 developers</strong> to architect and deploy the official college cultural event platform. Built with HTML5, CSS3, JavaScript, PHP &amp; MySQL with a real-time registration database. Successfully handled <strong>1,200+ event registrations</strong> across a 3-day live event with stable deployment throughout. Won <strong>Best Web Dev Project — College Web Challenge 2024</strong>.</p>
+                
+                <!-- Visual Pipeline Strip -->
+                <div class="pj-pipeline">
+                    <div class="pipe-header"><i class="fas fa-laptop-code"></i> Engineering &amp; Delivery</div>
+                    <div class="pipe-steps">
+                        <span class="pipe-step"><i class="fas fa-users-gear"></i> Led 5 Developers</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-code"></i> HTML5/CSS3/JS/PHP</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="devicon-mysql-plain colored"></i> Live MySQL DB</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step"><i class="fas fa-server"></i> Production Deployment</span>
+                        <span class="pipe-arrow">→</span>
+                        <span class="pipe-step highlight"><i class="fas fa-award"></i> 1,200+ Registrations</span>
+                    </div>
+                </div>
+
                 <div class="pj-tech"><span class="pj-tag"><i class="devicon-html5-plain colored"></i> HTML5</span><span class="pj-tag"><i class="devicon-css3-plain colored"></i> CSS3</span><span class="pj-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span><span class="pj-tag"><i class="devicon-php-plain colored"></i> PHP</span><span class="pj-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span><span class="pj-tag"><i class="devicon-github-original colored"></i> GitHub</span></div>
                 <div class="project-ppt" data-ppt-file="assets/ppt/Khwaish_Cultural_Event_Website.pptx">
                     <div class="ppt-head">
@@ -652,19 +733,6 @@
                     <p class="ppt-note">Tip: slides render when this site is opened from a hosted URL (for example GitHub Pages).</p>
                 </div>
                 <a class="pj-link" href="https://github.com/Subhash-koli" target="_blank">View on GitHub →</a>
-            </div>
-            <div class="proj-vis">
-                <div class="vis-inner">
-                    <div class="vis-img-wrap" onclick="openImgModal(this.querySelector('img'))">
-                        <img src="assets/images/khwaish_event_preview.png" alt="Khwaish Platform UI" class="proj-vis-img">
-                        <div class="vis-img-hover"><i class="fas fa-search-plus"></i> View High-Res Interface</div>
-                        <div class="vis-img-badge"><i class="fas fa-laptop-code"></i> Live Web Platform UI</div>
-                    </div>
-                    <div class="vis-mini-stats" style="margin-top:12px;grid-template-columns:1fr 1fr;gap:8px;">
-                        <div class="vms"><div class="vms-val" style="color:var(--blue2);">5 Devs</div><div class="vms-label">Team Lead</div></div>
-                        <div class="vms"><div class="vms-val" style="color:var(--green);">1.2K+</div><div class="vms-label">Registrations</div></div>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -879,25 +947,40 @@
             <div id="form-status" class="form-status"></div>
         </form>
     </div>
-    <div>
+    <div class="contact-right">
         <div class="contact-links">
-
-            <a href="mailto:subhashkoli2004@gmail.com" class="c-link reveal d2"><div class="cl-icon-wrap"><span><i class="fas fa-envelope"></i></span></div><div><div class="cl-label">Email</div><div class="cl-val">subhashkoli2004@gmail.com</div></div></a>
-            <a href="https://linkedin.com/in/subhash-koli-930bb1306" target="_blank" class="c-link reveal d3"><div class="cl-icon-wrap"><span><i class="fab fa-linkedin"></i></span></div><div><div class="cl-label">LinkedIn</div><div class="cl-val">linkedin.com/in/subhash-koli</div></div></a>
-            <a href="https://github.com/Subhash-koli" target="_blank" class="c-link reveal d4"><div class="cl-icon-wrap"><span><i class="fab fa-github"></i></span></div><div><div class="cl-label">GitHub</div><div class="cl-val">github.com/Subhash-koli</div></div></a>
-            <div class="c-link reveal d5" style="cursor:default;"><div class="cl-icon-wrap"><span><i class="fas fa-map-marker-alt"></i></span></div><div><div class="cl-label">Location</div><div class="cl-val">Powai, Andheri, Mumbai · Open to Relocation</div></div></div>
+            <a href="mailto:subhashkoli2004@gmail.com" class="c-link reveal d2">
+                <div class="cl-icon-wrap"><i class="fas fa-envelope" style="color:var(--blue2);"></i></div>
+                <div><div class="cl-label">Email</div><div class="cl-val">subhashkoli2004@gmail.com</div></div>
+            </a>
+            <a href="https://linkedin.com/in/subhash-koli-930bb1306" target="_blank" rel="noopener noreferrer" class="c-link reveal d3">
+                <div class="cl-icon-wrap"><i class="fab fa-linkedin" style="color:#0A66C2;"></i></div>
+                <div><div class="cl-label">LinkedIn</div><div class="cl-val">linkedin.com/in/subhash-koli</div></div>
+            </a>
+            <a href="https://github.com/Subhash-koli" target="_blank" rel="noopener noreferrer" class="c-link reveal d4">
+                <div class="cl-icon-wrap"><i class="fab fa-github" style="color:var(--text);"></i></div>
+                <div><div class="cl-label">GitHub</div><div class="cl-val">github.com/Subhash-koli</div></div>
+            </a>
+            <div class="c-link reveal d5" style="cursor:default;">
+                <div class="cl-icon-wrap"><i class="fas fa-map-marker-alt" style="color:var(--rose);"></i></div>
+                <div><div class="cl-label">Location</div><div class="cl-val">Powai, Mumbai · Open to Relocation</div></div>
+            </div>
         </div>
-    </div>
-        <div class="cta-status">
+        
+        <div class="cta-status reveal d3" style="margin-top:20px;">
             <div class="cta-status-dot"></div>
             <div>
                 <div class="cta-status-txt">Open to Opportunities</div>
-                <div style="font-size:11.5px;color:var(--muted);margin-top:1px;">Internships & Junior Data Analyst / Data Scientist roles</div>
+                <div style="font-size:11.5px;color:var(--muted);margin-top:1px;">Internships &amp; Junior Data Analyst / Data Scientist roles</div>
             </div>
         </div>
-        <a href="mailto:subhashkoli2004@gmail.com" class="cta-btn"><i class="fas fa-envelope"></i> Send Me a Message</a>
-        <a href="Subhash_Koli_Resume.pdf" download class="cta-btn-secondary"><i class="fas fa-download"></i> Download Resume</a>
+
+        <div style="display:flex;gap:10px;margin-top:16px;" class="reveal d4">
+            <a href="mailto:subhashkoli2004@gmail.com" class="cta-btn" style="flex:1;"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="Subhash_Koli_Resume.pdf" download class="cta-btn-secondary" style="flex:1;margin-top:0;"><i class="fas fa-download"></i> Resume</a>
+        </div>
     </div>
+</div>
 </div>
 
 <!-- ═══ FOOTER ═══ -->
