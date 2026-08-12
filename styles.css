@@ -699,6 +699,17 @@ body.dark-mode{
   padding:4px 10px;border-radius:6px;
   background:var(--bg);border:1px solid var(--border);
   color:var(--text2);transition:all .2s;
+  display:inline-flex;align-items:center;gap:4px;
+}
+.sk-tag i{
+  font-size:12px;
+}
+.role-chip i{
+  font-size:13px;
+}
+.cc-issuer i{
+  font-size:12px;
+  margin-right:3px;
 }
 .sk-tag.p{color:var(--blue2);background:var(--blue-lt);border-color:var(--blue-mid);}
 .sk-tag.v{color:var(--violet);background:var(--violet-lt);border-color:#C4B5FD;}
