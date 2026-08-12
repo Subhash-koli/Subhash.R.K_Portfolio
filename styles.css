@@ -1928,6 +1928,42 @@ html{
     padding: 8px 4px;
   }
 
+  /* ── Hero Profile Avatar on XS ── */
+  .hero-profile-wrap {
+    max-width: 100%;
+    padding: 5px 12px 5px 6px;
+    gap: 8px;
+  }
+  .hero-profile-img {
+    width: 36px;
+    height: 36px;
+  }
+  .hero-profile-name {
+    font-size: 12px;
+  }
+  .hero-profile-title {
+    font-size: 10px;
+  }
+
+  /* ── Project Preview Images on XS ── */
+  .proj-vis-img {
+    height: 160px;
+  }
+  .vis-img-badge {
+    font-size: 9.5px;
+    padding: 3px 8px;
+  }
+
+  /* ── Logo Emblems on XS ── */
+  .org-logo-img {
+    width: 24px;
+    height: 24px;
+  }
+  .cert-logo-img {
+    width: 20px;
+    height: 20px;
+  }
+
   /* ── Section titles ── */
   .sec-title {
     font-size: clamp(24px, 7vw, 32px);
