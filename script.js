@@ -1,13 +1,9 @@
-/* ── Loading Screen ── */
+/* ── Page Init ── */
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        const loadingScreen = document.getElementById('loading-screen');
-        if (loadingScreen) {
-            loadingScreen.classList.add('hidden');
-            document.body.classList.remove('loading');
-            document.body.classList.add('loaded');
-        }
-    }, 2000); // 2 second loading animation
+    document.body.classList.add('loaded');
+    // Dynamic footer year
+    const fy = document.getElementById('footer-year');
+    if (fy) fy.textContent = new Date().getFullYear();
 });
 
 /* ── Mobile Navigation ── */
@@ -198,30 +194,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-/* ── Cursor ── */
-const cur = document.getElementById('cur');
-const ring = document.getElementById('cur-ring');
-let mx = 0, my = 0, rx = 0, ry = 0;
 
-document.addEventListener('mousemove', e => {
-    mx = e.clientX;
-    my = e.clientY;
-    cur.style.left = mx + 'px';
-    cur.style.top = my + 'px';
-});
-
-(function anim() {
-    rx += (mx - rx) * .13;
-    ry += (my - ry) * .13;
-    ring.style.left = rx + 'px';
-    ring.style.top = ry + 'px';
-    requestAnimationFrame(anim);
-})();
-
-document.querySelectorAll('a,button,.skill-card,.proj,.ach-card,.cert-card').forEach(el => {
-    el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
-    el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
-});
 
 /* ── Scroll Reveal ── */
 const io = new IntersectionObserver(entries => {
@@ -398,7 +371,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Enhanced button interactions
-    const buttons = document.querySelectorAll('.btn-main, .btn-out, .btn-resume, .cta-btn, .cta-btn-secondary');
+    const buttons = document.querySelectorAll('.btn-main, .btn-out, .cta-btn, .cta-btn-secondary');
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-3px) scale(1.02)';
@@ -550,63 +523,7 @@ document.addEventListener('keydown', function(e) {
 // Log that the portfolio is ready
 console.log('🚀 Subhash Koli Portfolio - Ready to impress!');
 
-/* ── Particle Effect ── */
-function createParticles() {
-    const particleBg = document.getElementById('particle-bg');
-    if (!particleBg) return;
-    
-    const particleCount = 20;
-    
-    for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'particle';
-        
-        // Random size
-        const size = Math.random() * 4 + 2;
-        particle.style.width = size + 'px';
-        particle.style.height = size + 'px';
-        
-        // Random position
-        particle.style.left = Math.random() * 100 + '%';
-        
-        // Random animation delay
-        particle.style.animationDelay = Math.random() * 20 + 's';
-        
-        // Random animation duration
-        particle.style.animationDuration = (Math.random() * 20 + 20) + 's';
-        
-        particleBg.appendChild(particle);
-    }
-}
 
-/* ── Magnetic Button Effect ── */
-function initMagneticButtons() {
-    const magneticButtons = document.querySelectorAll('.magnetic-btn');
-    
-    magneticButtons.forEach(button => {
-        button.addEventListener('mousemove', (e) => {
-            const rect = button.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-            
-            button.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
-        });
-        
-        button.addEventListener('mouseleave', () => {
-            button.style.transform = 'translate(0, 0)';
-        });
-    });
-}
-
-/* ── Initialize Effects ── */
-document.addEventListener('DOMContentLoaded', () => {
-    createParticles();
-    initMagneticButtons();
-    
-    // Add magnetic class to main buttons
-    const mainButtons = document.querySelectorAll('.btn-main, .nav-cta');
-    mainButtons.forEach(btn => btn.classList.add('magnetic-btn'));
-});
 
 /* ── Contact Form ── */
 const contactForm = document.getElementById('contact-form');
