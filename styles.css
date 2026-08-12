@@ -2113,3 +2113,15 @@ html{
     right: 50px !important;
   }
 }
+
+/* ═══════════════════════════════════════════
+   TOUCH DEVICE HOVER CLEANUP
+═══════════════════════════════════════════ */
+@media (hover: none) {
+  .btn-main:hover, .btn-out:hover, .filter-btn:hover,
+  .skill-card:hover, .proj:hover, .exp-card:hover,
+  .cert-card:hover, .ach-card:hover, .c-link:hover {
+    transform: none !important;
+  }
+}
+

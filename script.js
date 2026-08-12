@@ -17,8 +17,8 @@ if (mobileMenuToggle && nav) {
     });
 
     // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
+    const allNavLinks = document.querySelectorAll('.nav-link, .nav-cta');
+    allNavLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenuToggle.classList.remove('active');
             nav.classList.remove('active');
@@ -220,7 +220,7 @@ const navObs = new IntersectionObserver(entries => {
             });
         }
     });
-}, { threshold: .4 });
+}, { threshold: .15 });
 
 sections.forEach(s => navObs.observe(s));
 
